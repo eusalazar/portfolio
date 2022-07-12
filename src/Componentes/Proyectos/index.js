@@ -40,7 +40,7 @@ function Proyectos() {
 
 const itemData = [
   {
-    img: '/imagenes/Food.jpg',
+    img: '/imagenes/food.jpg',
     title: 'App Food',
     author: '',
     rows: 3,
@@ -48,12 +48,12 @@ const itemData = [
     featured: true,
   },
   {
-    img: '/imagenes/RelojDigital.png',
+    img: '/imagenes/reloj-digital.png',
     title: 'Reloj Digital',
     author: '',
   },
   {
-    img: '/imagenes/Videogames.jpg',
+    img: '/imagenes/video-games.jpg',
     title: 'Videogames',
     author: '',
   },
