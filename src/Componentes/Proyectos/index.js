@@ -48,12 +48,12 @@ const itemData = [
     featured: true,
   },
   {
-    img: './imagenes/RelojDigital.png',
+    img: '/imagenes/RelojDigital.png',
     title: 'Reloj Digital',
     author: '',
   },
   {
-    img: './imagenes/Videogames.jpg',
+    img: '/imagenes/Videogames.jpg',
     title: 'Videogames',
     author: '',
   },
