@@ -73,7 +73,7 @@ function Home() {
 
         <Typography variant="body" 
         gutterBottom sx={{ width: 600 }} >
-        Tengo capacidad para adaptarme a cualquier circunstacia. 
+        Tengo capacidad para adaptarme a cualquier circunstancia. 
         Me gusta trabajar en equipo dando lo mejor en cada proyecto. 
         Actualmente sigo con mi formacion y estoy en busca de una oportunidad 
         laboral  para continuar desarrollando mis habilidades.
