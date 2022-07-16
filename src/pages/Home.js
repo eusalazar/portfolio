@@ -18,7 +18,7 @@ import {useState} from 'react';
 import ChipSelect from "../Componentes/ChipSelect";
 import Proyectos from "../Componentes/Proyectos";
 import Imagen from "../assets/imagen.jpg"
-import Pdf from "../assets/Cv.pdf"
+import Pdf from "../assets/cv.pdf"
 
 
 function allyProps(index) {
