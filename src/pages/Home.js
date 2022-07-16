@@ -52,10 +52,10 @@ function Home() {
 
         <Typography variant="h5" 
         gutterBottom commponent="div">
-          Eugenia Salazar
+          Eugenia Salazar Acuña
         </Typography>
         
-        <Typography variant="subtitle3" 
+        <Typography variant="h6" 
         gutterBottom commponent="div">
           Desarrollador Web Full Stack
         </Typography>
@@ -73,10 +73,13 @@ function Home() {
 
         <Typography variant="body" 
         gutterBottom sx={{ width: 600 }} >
-        Tengo capacidad para adaptarme a cualquier circunstancia. 
-        Me gusta trabajar en equipo dando lo mejor en cada proyecto. 
-        Actualmente sigo con mi formacion y estoy en busca de una oportunidad 
-        laboral  para continuar desarrollando mis habilidades.
+        Tengo capacidad para adaptarme a cualquier circunstacia. 
+        Me gusta trabajar en equipo dando
+        lo mejor en cada proyecto. Actualmente sigo con mi formacion 
+        y estoy en busca de una
+        oportunidad laboral para desarrollar React en el frontend y 
+        Express y Node.js en el backend.
+
         </Typography>
         <br></br>
 
@@ -84,6 +87,7 @@ function Home() {
           <Link
             component="button"
             variant="body2"
+            color= "secondary"
             onClick={() =>{
               window.open( 'https://www.linkedin.com/in/eugenia-salazar-236470220/' , '_blank')
             }}
@@ -94,6 +98,7 @@ function Home() {
         <Link
           component="button"
           variant="body2"
+          color= "secondary"
           onClick={() =>{
             window.open( 'https://github.com/eusalazar' , '_blank')
           }}
@@ -104,6 +109,7 @@ function Home() {
         <Link
           component="button"
           variant="body2"
+          color= "secondary"
           onClick={() =>{
             window.open( 'https://wa.me/5493816582895' )
           }}
@@ -114,6 +120,7 @@ function Home() {
         <Link
           component="button"
           variant="body2"
+          color= "secondary"
           onClick={() =>{
             window.open( 'mailto:eugeniasalazar745@gmail.com', '_blank' )
           }}
@@ -125,7 +132,9 @@ function Home() {
         
         <div>
           <Button variant="contained" 
-          color="primary" 
+          color="secondary" 
+          size="large"
+          sx={{borderRadius: 8 }}
           endIcon={ <DownloadForOfflineIcon/>}
           href={Pdf}  download="cv.pdf"
           >

@@ -1,11 +1,13 @@
 import * as React from 'react';
 import { Chip, Stack, Grid } from '@mui/material';
 
+
 function ChipSelect() {
     return (
-        <Stack direction="row" spacing={1} alignContent="center" justifyContent=
-        "center"
-        alignItems="flex-start">
+        <Stack direction="row" spacing={1} 
+        alignContent= "center" 
+        justifyContent= "center"
+        alignItems="flex-start" >
           <Grid item xs={5} >
             <Chip label="Frontend Developer" />
             <p> HTML</p>

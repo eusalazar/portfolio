@@ -4,9 +4,15 @@ import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
 import ListSubheader from '@mui/material/ListSubheader';
 import IconButton from '@mui/material/IconButton';
-import InfoIcon from '@mui/icons-material/Info';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import { Button } from '@mui/material'
 
 function Proyectos() {
+
+  function redireccionar(url){
+    window.open(url)
+  }
+
   return (
     <ImageList sx={{ width: 500, height: 450 }}>
       <ImageListItem key="Subheader" cols={2}>
@@ -21,14 +27,21 @@ function Proyectos() {
             loading="lazy"
           />
          <ImageListItemBar
-            title={item.title}
+            title={
+              <Button onClick={() => redireccionar(item.url) }
+                sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
+                aria-label={`info about ${item.title}`}
+              >
+                  {item.title}
+              </Button>
+            }
             subtitle={item.author}
             actionIcon={
               <IconButton
                 sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
                 aria-label={`info about ${item.title}`}
               >
-              <InfoIcon />
+                <GitHubIcon />
               </IconButton>
             }
           />
@@ -40,25 +53,28 @@ function Proyectos() {
 
 const itemData = [
   {
-    img: '/assets/food.jpg',
-    title: 'App Food',
-    author: '',
+    img: '/assets/video-games.jpg',
+    title: 'App Videogames',
+    author: 'PosgrestSQL, Node js, JS, Express, React, Redux, Css',
     rows: 3,
     cols: 3,
     featured: true,
+    url: "https://euge-videogames-client.herokuapp.com"
   },
   {
     img: '/assets/reloj-digital.png',
     title: 'Reloj Digital',
-    author: '',
+    author: 'JavaScript,HTML,Css',
+    url: "https://eusalazar.github.io/Reloj-Digital/"
   },
   {
-    img: '/assets/video-games.jpg',
-    title: 'Videogames',
-    author: '',
+    img: '/assets/food.jpg',
+    title: 'App Food',
+    author: 'En desarrollo',
+    
   },
   {
-    img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
+    img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c', 
     title: '',
     author: '',
     cols: 2,
