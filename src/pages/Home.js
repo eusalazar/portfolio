@@ -89,7 +89,7 @@ function Home() {
             variant="body2"
             color= "secondary"
             onClick={() =>{
-              window.open( 'https://www.linkedin.com/in/eugenia-salazar-236470220/' , '_blank')
+              window.open( 'https://www.linkedin.com/in/eugeniadev' , '_blank')
             }}
           >
           <LinkedInIcon/>
