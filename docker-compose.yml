@@ -1,7 +1,7 @@
 version: '3.7'
 
 services:
-  portfolio-react-prod:
+  portfolio-react-prod-eugenia:
     environment:
       VIRTUAL_HOST: euge.dev
       LETSENCRYPT_HOST: euge.dev
@@ -11,7 +11,7 @@ services:
       dockerfile: Dockerfile
     expose:
       - 80
-    container_name: portfolio-nodejs-server
+    container_name: portfolio-eugenia-nodejs-server
     volumes:
       - .:/usr/src/app/portfolio-react-prod
       - ./build:/usr/src/app/portfolio-react-prod/build
