@@ -6,12 +6,12 @@ services:
       VIRTUAL_HOST: euge.dev
       LETSENCRYPT_HOST: euge.dev
       LETSENCRYPT_EMAIL: eugeniasalazar745@gmail.com
-      VIRTUAL_PORT: 3000
+      VIRTUAL_PORT: 3500
     build:
       context: .
       dockerfile: Dockerfile
     expose:
-      - 3000
+      - 3500
     container_name: portfolio-eugenia-nodejs-server
     volumes:
       - .:/usr/src/app/portfolio
