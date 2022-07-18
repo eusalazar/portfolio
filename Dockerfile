@@ -1,6 +1,6 @@
 FROM node:16.15
 
-WORKDIR /usr/src/app/portfolio-react-prod
+WORKDIR /usr/src/app/portfolio
 
 COPY package*.json ./
 
@@ -13,6 +13,6 @@ RUN npm run build
 
 COPY build/ ./build
 
-EXPOSE 80
+EXPOSE 3000
 
 CMD ["npm", "run", "start"]

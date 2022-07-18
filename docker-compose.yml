@@ -5,17 +5,18 @@ services:
     environment:
       VIRTUAL_HOST: euge.dev
       LETSENCRYPT_HOST: euge.dev
-      LETSENCRYPT_EMAIL: eugeniasalazar745@gmail.com 
+      LETSENCRYPT_EMAIL: eugeniasalazar745@gmail.com
+      VIRTUAL_PORT: 3000
     build:
       context: .
       dockerfile: Dockerfile
     expose:
-      - 80
+      - 3000
     container_name: portfolio-eugenia-nodejs-server
     volumes:
-      - .:/usr/src/app/portfolio-react-prod
-      - ./build:/usr/src/app/portfolio-react-prod/build
-      - /usr/src/app/portfolio-react-prod/node_modules
+      - .:/usr/src/app/portfolio
+      - ./build:/usr/src/app/portfolio/build
+      - /usr/src/app/portfolio/node_modules
 
 networks:
   default:
