@@ -1,0 +1,23 @@
+version: '3.7'
+
+services:
+  portfolio-react-prod:
+    environment:
+      VIRTUAL_HOST: euge.dev
+      LETSENCRYPT_HOST: euge.dev
+      LETSENCRYPT_EMAIL: eugeniasalazar745@gmail.com 
+    build:
+      context: .
+      dockerfile: Dockerfile
+    expose:
+      - 80
+    container_name: portfolio-nodejs-server
+    volumes:
+      - .:/usr/src/app/portfolio-react-prod
+      - ./build:/usr/src/app/portfolio-react-prod/build
+      - /usr/src/app/portfolio-react-prod/node_modules
+
+networks:
+  default:
+    external:
+      name: nginx-proxy
