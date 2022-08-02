@@ -9,8 +9,8 @@ import { Button } from '@mui/material'
 
 function Proyectos() {
 
-  function redireccionar(url,git){
-    window.open(url, git)
+  function redireccionar(url,gitHub){
+    window.open(url, gitHub)
   }
   
   return (
@@ -37,9 +37,9 @@ function Proyectos() {
             }
             subtitle={item.author}
             actionIcon={
-              <IconButton 
+              <IconButton onClick={() => redireccionar(item.gitHub) }
                 sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
-                aria-label={`info about ${item.title}`}
+                aria-label={`info about ${item.gitHub}`}
               >
                 <GitHubIcon />
               </IconButton>
@@ -59,19 +59,22 @@ const itemData = [
     rows: 3,
     cols: 3,
     featured: true,
-    url: "https://euge-videogames-client.herokuapp.com"
+    url: "https://euge-videogames-client.herokuapp.com",
+    gitHub: "https://github.com/eusalazar/videogames",
   },
   {
     img: '/assets/reloj-digital.png',
     title: 'Reloj Digital',
     author: 'JavaScript,HTML,Css',
-    url: "https://eusalazar.github.io/Reloj-Digital/"
+    url: "https://eusalazar.github.io/Reloj-Digital/",
+    gitHub: "https://github.com/eusalazar/Reloj-Digital"
   },
   {
     img: '/assets/todoreact.png',
     title: 'To do React ',
     author: 'React, HTML, Css',
     url: "",
+    gitHub: "https://github.com/eusalazar/todo-React"
     
   },
   {
@@ -80,6 +83,7 @@ const itemData = [
     author: 'jQuery, HTML, Css',
     url: "https://eusalazar.github.io/to-do",
     cols: 2,
+    gitHub: "https://github.com/eusalazar/to-do"
   },
 
   
