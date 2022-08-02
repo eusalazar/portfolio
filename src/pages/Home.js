@@ -46,7 +46,7 @@ function Home() {
         <Avatar 
           alt="Eugenia" 
           src={Imagen}
-          sx={{ width: 140, height: 140 }} 
+          sx={{ width: 190, height: 190 , border: '8px solid #E0BCF0'}} 
           />
           <br></br>
 
@@ -87,7 +87,7 @@ function Home() {
           <Link
             component="button"
             variant="body2"
-            color= "secondary"
+            sx={{ color: '#000000'}} 
             onClick={() =>{
               window.open( 'https://www.linkedin.com/in/eugeniadev' , '_blank')
             }}
@@ -98,7 +98,7 @@ function Home() {
         <Link
           component="button"
           variant="body2"
-          color= "secondary"
+          sx={{ color: '#000000'}}
           onClick={() =>{
             window.open( 'https://github.com/eusalazar' , '_blank')
           }}
@@ -109,7 +109,7 @@ function Home() {
         <Link
           component="button"
           variant="body2"
-          color= "secondary"
+          sx={{ color: '#000000'}}
           onClick={() =>{
             window.open( 'https://wa.me/5493816582895' )
           }}
@@ -120,7 +120,7 @@ function Home() {
         <Link
           component="button"
           variant="body2"
-          color= "secondary"
+          sx={{ color: '#000000'}}
           onClick={() =>{
             window.open( 'mailto:eugeniasalazar745@gmail.com', '_blank' )
           }}
