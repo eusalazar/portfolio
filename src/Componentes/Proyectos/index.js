@@ -9,10 +9,10 @@ import { Button } from '@mui/material'
 
 function Proyectos() {
 
-  function redireccionar(url){
-    window.open(url)
+  function redireccionar(url,git){
+    window.open(url, git)
   }
-
+  
   return (
     <ImageList sx={{ width: 500, height: 450 }}>
       <ImageListItem key="Subheader" cols={2}>
@@ -37,7 +37,7 @@ function Proyectos() {
             }
             subtitle={item.author}
             actionIcon={
-              <IconButton
+              <IconButton 
                 sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
                 aria-label={`info about ${item.title}`}
               >
@@ -68,17 +68,19 @@ const itemData = [
     url: "https://eusalazar.github.io/Reloj-Digital/"
   },
   {
-    img: '/assets/food.jpg',
-    title: 'App Food',
-    author: 'En desarrollo',
+    img: '/assets/todoreact.png',
+    title: 'To do React ',
+    author: 'React, HTML, Css',
     
   },
   {
-    img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c', 
-    title: '',
-    author: '',
+    img: '/assets/to-do.png', 
+    title: 'To do jQuery',
+    author: 'jQuery, HTML, Css',
+    url: "https://eusalazar.github.io/to-do",
     cols: 2,
   },
+
   
 ];
 
