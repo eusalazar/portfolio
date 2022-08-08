@@ -73,7 +73,7 @@ const itemData = [
     img: '/assets/todoreact.png',
     title: 'To do React ',
     author: 'React, HTML, Css',
-    url: "",
+    url: "https://62f05e680e3e5c77938b12ac--calm-macaron-e6cb24.netlify.app/",
     gitHub: "https://github.com/eusalazar/todo-React"
     
   },
